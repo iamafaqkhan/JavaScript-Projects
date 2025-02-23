@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+
+    <script>
+        let namee;
+        var age;
+        var mark1, mark2, mark3;
+        var sum, percentage, total_marks = 300;
+
+
+        namee = prompt("Enter your Name")
+        age = prompt("Enter your Age")
+        mark1 = prompt("Enter Biology Marks out of 100")
+        mark2 = prompt("Enter Chemistry marks out of 100")
+        mark3 = prompt("Enter Physics marks out of 100")
+
+        mark1 = parseFloat(mark1)
+        mark2 = parseFloat(mark2)
+        mark3 = parseFloat(mark3)
+
+
+        sum = mark1 + mark2 + mark3;
+
+        alert("Total Marks :" + total_marks)
+        alert("Obtained Marks :" + sum)
+
+        alert("Persenatge Obtained " + (sum/total_marks)*100 + "%")
+  
+    </script>
+    
+</body>
+</html>
