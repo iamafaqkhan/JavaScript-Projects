@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+
+    <style>
+
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .incrementButton {
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: 2px solid green;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px
+        }
+        .incrementButton:hover {
+            background-color: green;
+            transition: 0.5s;
+            color: white;
+        }
+
+        .decrementButton {
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: 2px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px
+        }
+        .decrementButton:hover {
+            background-color: red;
+            transition: 0.5s;
+            color: white;
+        }
+
+        #number {
+           padding-bottom: 20px;
+            font-size: 50px;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="number">0</div>
+    <button class="incrementButton" onclick="increment()">Increment</button>
+    <button class="decrementButton" onclick="decrement()">Decrement</button>
+    <script src="counter.js"></script>    
+</body>
+</html>
